@@ -1,7 +1,14 @@
 import axios from "axios";
 
-const isLocal = window.location.hostname === "localhost";
+// const isLocal = window.location.hostname === "localhost";
 
+// const api = axios.create({
+//   baseURL: isLocal
+//     ? "/api"
+//     : "https://payroll-management-1-nb0h.onrender.com",
+// });
+
+// axios.js
 const api = axios.create({
   baseURL: "https://payroll-management-1-nb0h.onrender.com/api",
   withCredentials: true,
